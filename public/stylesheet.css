@@ -1,0 +1,130 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body, html{
+    font-family: 'Noto Serif TC', serif;
+    font-size:16px;
+    font-weight:400;
+    line-height: 1.8em;
+    height:100%;
+    background-color:#f4f4f4;
+}
+/* .row{
+    width:1140px;
+} */
+.jumbotron{
+    background-image: url('image/blackAndWhite.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height:100%;
+    color:#FFFFFF;
+
+}
+/* h1{
+    animation-duration: 1;
+} */
+.navbar {
+    border-bottom:0.1rem solid #1f5fc6;
+    padding:0;
+}
+.navbar-nav{
+    margin-left:900px;
+}
+.navbar-brand{
+    padding-left:1rem;
+}
+.nav-item a{
+    text-transform: uppercase;
+}
+#navbarNav .navbar-nav>li>a:hover{
+    color:#FFFFFF;
+    background-color:#5F5F5F;
+    font-weight: bold; 
+   
+}
+.top-whatWeDo p{
+    text-align:center;
+    color:#A9A9A9;
+}
+.main-whatWeDo {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    
+}
+.whatWeDo {
+    text-align: center;
+    padding:1rem;
+    /* background:#f2f6fc; */
+    background:#FFFFFF;
+    box-shadow: 0 1px 5px rgb(57, 59, 63,0.8) 
+}
+i{
+    color:#a9b7d3;
+}
+
+.img2 {
+    background-image:url('image/interior.jpeg');
+    opacity: 0.70; 
+    min-height: 70%   
+}
+.img3 {
+    background-image:url('image/bridge.jpeg');
+    min-height: 70%;
+    margin-top:1em;
+}
+.img1, .img2, .img3 {
+    position:relative;
+    background-position: center;
+    background-position: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+h2, .text {
+    color:#A9A9A9;
+    text-align: center;
+    padding:0.5em;
+}
+/* .workerImage{
+    justify-content: center;
+} */
+.card {
+    width:15rem;
+    float:left;
+    
+    /* justify-content: center;     */
+}
+
+.card-text {
+    color:#A9A9A9;
+
+}
+.footer {
+    min-height:30%;
+    margin-top:1em;
+    background-color: #272A2F;
+    float:left;
+    padding:2em;
+    margin-top:1em;
+    text-align: center;
+    /* justify-content: center; */
+}
+.footer p{
+    color:#FFFFFF;
+    
+}
+ ion-icon {
+    color:blue;
+    font-size:2em;  
+}
+.copyRight{
+    text-align:center;
+}
+
+/* .footerSpec {
+    border-right-style: 2px solid blue;
+} */
