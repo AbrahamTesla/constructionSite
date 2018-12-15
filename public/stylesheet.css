@@ -16,16 +16,14 @@ body, html{
     width:1140px;
 } */
 .jumbotron{
-    background-image: url('https://github.com/AbrahamTesla/constructionSite/blob/master/public/image/blackAndWhite.jpg');
+    background-image: url('image/blackAndWhite.jpg');
     background-position: center;
     background-size: cover;
     min-height:100%;
     color:#FFFFFF;
 
 }
-/* h1{
-    animation-duration: 1;
-} */
+
 .navbar {
     border-bottom:0.1rem solid #1f5fc6;
     padding:0;
@@ -72,7 +70,7 @@ i{
     min-height: 70%   
 }
 .img3 {
-    background-image:url('https://github.com/AbrahamTesla/constructionSite/blob/master/public/image/bridge.jpeg');
+    background-image:url('image/bridge.jpeg');
     min-height: 70%;
     margin-top:1em;
 }
@@ -84,7 +82,7 @@ i{
     background-repeat: no-repeat;
 
 }
-.text {
+h2,.text {
     color:#A9A9A9;
     text-align: center;
     padding:0.5em;
