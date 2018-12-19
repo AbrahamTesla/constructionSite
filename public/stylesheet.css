@@ -12,13 +12,14 @@ body, html{
     height:100%;
     background-color:#f4f4f4;
 }
+
+/***** Main Image Jumbotron *****/
 .jumbotron{
     background-image: url('image/blackAndWhite.jpg');
     background-position: center;
     background-size: cover;
     min-height:100%;
     color:#FFFFFF;
-
 }
 .navbar {
     border-bottom:0.1rem solid #1f5fc6;
@@ -38,6 +39,8 @@ body, html{
     background-color:#5F5F5F;
     font-weight: bold;    
 }
+
+/***** What we do section Cards ******/
 .top-whatWeDo p{
     text-align:center;
     color:#A9A9A9;
@@ -46,12 +49,10 @@ body, html{
     display:grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-    
 }
 .whatWeDo {
     text-align: center;
     padding:1rem;
-    /* background:#f2f6fc; */
     background:#FFFFFF;
     box-shadow: 0 1px 5px rgb(57, 59, 63,0.8) 
 }
@@ -82,9 +83,6 @@ h2,.text {
     text-align: center;
     padding:0.5em;
 }
-/* .workerImage{
-    justify-content: center;
-} */
 .card {
     width:15rem;
     float:left;    
@@ -94,14 +92,13 @@ h2,.text {
     color:#A9A9A9;
 }
 
-/* Portfolio page CSS */
+/*******Portfolio page CSS ******/
 .mainGallery{
     padding-bottom: 3.5rem;
 }
 .wrapper {
     display:grid;
     grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: 200px 100px; */
     grid-gap: 10px;
 }
 .mainBox{
@@ -130,10 +127,9 @@ h2,.text {
 }
 .gallery ul li {
     display:inline;
-    padding:0;   
 }
 .gallery img:hover{
-    border: 1px solid blue;
+    border: 1px solid #1f5fc6;
     transform: rotate(45deg);
    
 }
@@ -142,24 +138,25 @@ h2,.text {
     padding:1rem;
     overflow-y: scroll;
     height:70vh;
-    /* background-color:#6989B1; */
 }
-
-
-/* Footer Page CSS */
-.footer {
+.gallery h4, .portfolio h2{
+    line-height: 0.5em;
+}
+/***** Footer Page CSS *****/
+ .footer {
     min-height:30%;
     margin-top:1em;
     background-color: #272A2F;
     float:left;
     padding:2em;
     margin-top:1em;
-    text-align: center;
-    /* justify-content: center; */
+    
 }
 .footer p{
-    color:#FFFFFF;
-    
+    color: rgba(255,255,255, .5);
+    font-weight: 400;
+    padding: 0 1.5rem;
+    text-align: center;
 }
  ion-icon {
     color:blue;
@@ -169,6 +166,3 @@ h2,.text {
     text-align:center;
 }
 
-/* .footerSpec {
-    border-right-style: 2px solid blue;
-} */
