@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 
     <title>Construction Page | Welcome </title>
@@ -21,18 +22,14 @@
         <a class="navbar-brand active" href="index.html">
             <i class="fa fa-fw fa-home"></i>
         </a>
-     
-        <!-- <a class="active" href="index.html">
-            <i class="fa fa-fw fa-home"></i>
-        </a>  -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <div class="navbar-toggler-icon"></div>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <div class="sr-only">(current)</div></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -46,73 +43,288 @@
                 </ul>
               </div>
     </nav>
-    <section class="porfolio">
-      <div class="container">
-        
+
+    <!-- <section class="mainGallery">
+      <div class="mainBox">
+        <img src=""/>
+      </div>
+    </section> -->
+
+    <!--Main Gallery Portfolio-->
+    <section class="mainGallery">
+      <div class="wrapper">
+         <div class="portfolio">
+              <h2>Kitchen</h2>
+              <div class="gallery">
+                <h4>Before</h4>
+                <ul>
+                    <li> 
+                      <a href="image/kitchen1B.JPG" data-thumbnail-src="image/kitchen1B.JPG" class="preview"><img src="image/kitchen1B.JPG" alt="kitchen1B"></a>
+                    </li>
+                    <li>
+                      <a href="image/kitchen2B.JPG" data-thumbnail-src="image/kitchen2B.JPG" class="preview"><img src="image/kitchen2B.JPG" alt="kitchen2B"></a>
+                    </li>
+                    <li>
+                      <a href="image/kitchen3B.JPG" data-thumbnail-src="image/kitchen3B.JPG" class="preview"><img src="image/kitchen3B.JPG" alt="kitchen3B"></a>
+                    </li>
+                    <li>
+                      <a href="image/kitchen4B.JPG" data-thumbnail-src="image/kitchen4B.JPG" class="preview"><img src="image/kitchen4B.JPG" alt="kitchen4B"></a>
+                    </li>
+                </ul>
+              </div>
+              <div class="gallery">
+                 <h4>After</h4>
+                  <ul>
+                      <li> 
+                        <a href="image/kitchen1A.JPG" data-thumbnail-src="image/kitchen1A.JPG" class="preview"><img src="image/kitchen1A.JPG" alt="kitchen1A"></a>
+                      </li>
+                      <li>
+                        <a href="image/kitchen2A.JPG" data-thumbnail-src="image/kitchen2A.JPG" class="preview"><img src="image/kitchen2A.JPG" alt="kitchen2A"></a>
+                      </li>
+                      <li>
+                        <a href="image/kitchen3A.JPG" data-thumbnail-src="image/kitchen3A.JPG" class="preview"><img src="image/kitchen3A.JPG" alt="kitchen3A"></a>
+                      </li>
+                      <li>
+                        <a href="image/kitchen4A.JPG" data-thumbnail-src="image/kitchen4A.JPG" class="preview"><img src="image/kitchen4A.JPG" alt="kitchen4A"></a>
+                      </li>
+                    
+                  </ul>
+              </div>
+              <h2>Living Room</h2>
+              <div class="gallery">
+                  <h4>Before</h4>
+                      <ul>
+                          <li>
+                              <a href="image/livingRoom1B.JPG" data-thumbnail-src="image/livingRoom1B.JPG" class="preview"><img class="rotate" src="image/livingRoom1B.JPG" alt="livingRoom1B"></a>
+                           </li>
+                           <li>
+                              <a href="image/livingRoom2B.JPG" data-thumbnail-src="image/livingRoom2B.JPG" class="preview"><img class="rotate" src="image/livingRoom2B.JPG" alt="livingRoom1B"></a>
+                           </li>
+                           <li>
+                              <a href="image/livingRoom3B.JPG" data-thumbnail-src="image/livingRoom3B.JPG" class="preview"><img class="rotate" src="image/livingRoom3B.JPG" alt="livingRoom1B"></a>
+                           </li>
+                          <li>
+                            <a href="image/livingRoom4B.JPG" data-thumbnail-src="image/livingRoom4B.JPG" class="preview"><img class="rotate" src="image/livingRoom4B.JPG" alt="livingRoom4B"></a>
+                          </li>
+                      </ul>
+                </div>
+                <div class="gallery">
+                    <h4>After</h4>
+                        <ul>
+                            <li> 
+                              <a href="image/livingRoom2A.JPG" data-thumbnail-src="image/livingRoom2A.JPG" class="preview"><img class="rotate" src="image/livingRoom2A.JPG" alt="livingRoom2A"></a>
+                            </li>
+                            <li>
+                              <a href="image/livingRoom1A.JPG" data-thumbnail-src="image/livingRoom1A.JPG" class="preview"><img class="rotate" src="image/livingRoom1A.JPG" alt="livingRoom1A"></a>
+                            </li>
+                            <li>
+                              <a href="image/livingRoom3A.JPG" data-thumbnail-src="image/livingRoom3A.JPG" class="preview"><img  src="image/livingRoom3A.JPG" alt="livingRoom3A"></a>
+                            </li>
+                            <li>
+                              <a href="image/livingRoom4A.JPG" data-thumbnail-src="image/livingRoom4A.JPG" class="preview"><img  src="image/livingRoom4A.JPG" alt="livingRoom4A"></a>
+                            </li>
+                        </ul>
+                  </div>
+                  <h2>Fire Place</h2>
+                  <div class="gallery">
+                      <h4>Before</h4>
+                          <ul>
+                              <li> 
+                                <a href="image/firePlace1B.JPG" data-thumbnail-src="image/firePlace1B.JPG" class="preview"><img  src="image/firePlace1B.JPG" alt="firePlace1B"></a>
+                              </li>
+                              <li>
+                                <a href="image/firePlace2B.JPG" data-thumbnail-src="image/firePlace2B.JPG" class="preview"><img  src="image/firePlace2B.JPG" alt="firePlace2B"></a>
+                              </li>
+                              <li>
+                                <a href="image/firePlace3B.JPG" data-thumbnail-src="image/firePlace3B.JPG" class="preview"><img  src="image/firePlace3B.JPG" alt="firePlace3B"></a>
+                              </li>
+                              <li>
+                                <a href="image/firePlace4B.JPG" data-thumbnail-src="image/firePlace4B.JPG" class="preview"><img  src="image/firePlace4B.JPG" alt="firePlace4B"></a>
+                              </li>
+                          </ul>
+                    </div>
+                    <div class="gallery">
+                        <h4>After</h4>
+                            <ul>
+                                <li> 
+                                  <a href="image/firePlace1A.JPG" data-thumbnail-src="image/firePlace1A.JPG" class="preview"><img src="image/firePlace1A.JPG" alt="firePlace1A"></a>
+                                </li>
+                                <li>
+                                  <a href="image/firePlace2A.JPG" data-thumbnail-src="image/firePlace2A.JPG" class="preview"><img src="image/firePlace2A.JPG" alt="firePlace2A"></a>
+                                </li>
+                                <li>
+                                  <a href="image/firePlace3A.JPG" data-thumbnail-src="image/firePlace3A.JPG" class="preview"><img src="image/firePlace3A.JPG" alt="firePlace3A"></a>
+                                </li>
+                                <li>
+                                  <a href="image/firePlace4A.JPG" data-thumbnail-src="image/firePlace4A.JPG" class="preview"><img src="image/firePlace4A.JPG" alt="firePlace4A"></a>
+                                </li>
+                            </ul>
+                      </div>
+                    <h2>Stair</h2>
+                      <div class="gallery">
+                          <h4>Before</h4>
+                              <ul>
+                                  <li> 
+                                    <a href="image/stair1B.JPG" data-thumbnail-src="image/stair1B.JPG" class="preview"><img src="image/stair1B.JPG" alt="stair1B"></a>
+                                  </li>
+                                  <li>
+                                    <a href="image/stair2B.JPG" data-thumbnail-src="image/stair2B.JPG" class="preview"><img src="image/stair2B.JPG" alt="stair2B"></a>
+                                  </li>
+                              </ul>
+                        </div>
+                        <div class="gallery">
+                            <h4>After</h4>
+                                <ul>
+                                    <li> 
+                                      <a href="image/stair1A.JPG" data-thumbnail-src="image/stair1A.JPG" class="preview"><img src="image/stair1A.JPG" alt="stair1A"></a>
+                                    </li>
+                                    <li>
+                                      <a href="image/stair2A.JPG" data-thumbnail-src="image/stair2A.JPG" class="preview"><img src="image/stair2A.JPG" alt="stair2A"></a>
+                                    </li>
+                                    <li>
+                                      <a href="image/stair3A.JPG" data-thumbnail-src="image/stair3A.JPG" class="preview"><img src="image/stair3A.JPG" alt="stair3A"></a>
+                                    </li>
+                                </ul>
+                          </div>
+                          <h2>Interlocking</h2>
+                          <div class="gallery">
+                              <h4>Before</h4>
+                                  <ul>
+                                      <li> 
+                                        <a href="image/interLocking1B.jpg" data-thumbnail-src="image/interLocking1B.jpg" class="preview"><img src="image/interLocking1B.jpg" alt="interLocking1B"></a>
+                                      </li>
+                                      <li>
+                                        <a href="image/interLocking2B.jpg" data-thumbnail-src="image/interLocking2B.jpg" class="preview"><img src="image/interLocking1B.jpg" alt="interLocking2B"></a>
+                                      </li>
+                                      <li>
+                                          <a href="image/interlocking3B.jpg" data-thumbnail-src="image/interlocking3B.jpg" class="preview"><img src="image/interlocking3B.jpg" alt="interLocking3B"></a>
+                                        </li>
+                                  </ul>
+                            </div>
+                            <div class="gallery">
+                                <h4>After</h4>
+                                    <ul>
+                                        <li> 
+                                          <a href="image/interLocking1A.jpg" data-thumbnail-src="image/interLocking1A.jpg" class="preview"><img  src="image/interLocking1A.jpg" alt="interLocking1A"></a>
+                                        </li>
+                                        <li>
+                                          <a href="image/interLocking2A.jpg" data-thumbnail-src="image/interLocking2A.jpg" class="preview"><img  src="image/interLocking2A.jpg" alt="interLocking2A"></a>
+                                        </li>
+                                    </ul>
+                              </div>
+                <!-- <img class="image1" src="image/houseUnfinish.jpeg" alt="houseUnfinish"> -->
+                <!-- <img src="image/houseFinish.jpeg" alt="housefinish"> -->
+              
+              <!-- <div class="box2">
+                  <h2>Kitchen</h2>
+                  <img src="image/kitchenUnfinished.jpg" alt="kitchenUnfinish">
+                  <img src="image/kitchenFinish.jpg" alt="kitchenUnfinish">
+              </div>
+              <div class="box3">
+                  <h2>Washroom</h2>
+                  <img src="image/washroomUnfinish.jpg" alt="washroomUnfinish">
+                  <img src="image/washroomFinish.jpg" alt="washroomfinish">
+              </div>
+              <div class="box4">
+                  <h2>Room</h2>
+                  <img src="image/roomUnfinish.jpg" alt="roomUnfinish">
+                  <img src="image/roomFinish.jpg" alt="roomfinish">
+              </div> -->
+              <!-- <div class="box5">
+                
+              </div>
+              <div class="box6">
+                
+              </div>
+              <div class="box7">
+                  
+              </div>
+              <div class="box8">
+                  
+              </div> -->
+        </div>
+            <div class="mainBox">
+                <h3 class="animated bounceInRight delay-1s">Scroll Photo Gallery to View</h2>
+                <img src="image/camera.jpg" alt="Preview Image"/>
+            </div>
       </div>
     </section>
     
-   
+   <!--Footer-->
    <footer class="container-fluid footer">
-     <div class="row footerSpec">
-        <div class="col-lg-4 col-md-4">
-              <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Accusamus ex corporis officia veritatis 
-                dolorem mollitia minus incidunt exercitationem ea fuga.
-              </p>    
-        </div>
-        <div class="col-lg-4 col-md-4">
-            <p> Main Office:
-                1789 Cassandra Road,
-                Ontario, Canada.
-                M1J1B2
-            </p>  
-            <p>
-                <a href="tel:647-835-5099">
-                    <span>
-                      <i class="fas fa-phone-square"></i>
-                    </span>
-                    (647)835-5099
-                </a>
-            </p>
-        </div>
-        <div class="col-lg-4 col-md-4">
-                <p>Connect With Us</p>
-                <p>
-                    <a href="#">
-                      <span>
-                            <ion-icon name="logo-facebook"></ion-icon>
-                      </span>
-                    </a>
-                      <a href="#">
-                          <span>
-                              <ion-icon name="logo-instagram"></ion-icon>
-                        </span>
-                      </a>
-                      <a href="#">
-                          <span>
-                              <ion-icon name="logo-twitter"></ion-icon>
-                        </span>
-                      </a>
-                      <a href="#">
-                          <span>
-                              <ion-icon name="mail"></ion-icon>
-                        </span>
-                      </a>
-                </p>
-          </div>
-        <div class="copyRight">
-          <p>Created by VM: &copy;2018</p>
-        </div>
-    </div>
-   </footer>
-  
+      <div class="row footerSpec">
+         <div class="col-lg-4 col-md-4">
+               <p>Lorem ipsum dolor sit amet consectetur 
+                 adipisicing elit. Accusamus ex corporis officia veritatis 
+                 dolorem mollitia minus incidunt exercitationem ea fuga.
+               </p>    
+         </div>
+         <div class="col-lg-4 col-md-4">
+             <p> Main Office:
+                 1789 Cassandra Road,
+                 Ontario, Canada.
+                 M1J1B2
+             </p>  
+             <p>
+                 <a href="tel:647-835-5099">
+                     <span>
+                       <i class="fas fa-phone-square"></i>
+                     </span>
+                     (647)835-5099
+                 </a>
+             </p>
+         </div>
+         <div class="col-lg-4 col-md-4">
+                 <p>Connect With Us</p>
+                 <p>
+                     <a href="#">
+                       <span>
+                             <ion-icon name="logo-facebook"></ion-icon>
+                       </span>
+                     </a>
+                       <a href="#">
+                           <span>
+                               <ion-icon name="logo-instagram"></ion-icon>
+                         </span>
+                       </a>
+                       <a href="#">
+                           <span>
+                               <ion-icon name="logo-twitter"></ion-icon>
+                         </span>
+                       </a>
+                       <a href="#">
+                           <span>
+                               <ion-icon name="mail"></ion-icon>
+                         </span>
+                       </a>
+                 </p>
+           </div>
+         <div class="copyRight">
+           <p>Created by VM: &copy;2018</p>
+         </div>
+     </div>
+    </footer>
+   
+   <script>
+      $(function () {
+            var mainBox = $(".mainBox img");
 
+            $(".preview").hover(function () {
+               
+                mainBox.attr("src", $(this).data("thumbnail-src"));
+                
+            }, function () {
+                mainBox.attr("src", "image/camera.jpg");
+            });
+      });
+      
+   
+   </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.4.8/dist/ionicons.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
