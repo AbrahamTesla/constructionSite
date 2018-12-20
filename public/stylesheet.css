@@ -12,7 +12,7 @@ body, html{
     height:100%;
     background-color:#f4f4f4;
     letter-spacing: 0.3px;
-    width:100%;
+    
 }
 
 /***** Main Image Jumbotron *****/
@@ -143,6 +143,10 @@ h2,.text {
 }
 .gallery h4, .portfolio h2{
     line-height: 0.5em;
+    /* font-family: monospace; */
+}
+.gallery h4 {
+    font-family: monospace;
 }
 /***** Footer Page CSS *****/
  .footer {
@@ -169,12 +173,12 @@ h2,.text {
 }
 
 /*****Contact Section CSS*****/
+
 .topContact {
     /* border: 10px solid  #272A2F; */
     border-radius: 0.5rem;
     /* optional for styling */
     border: 2px solid #d9dde2;
-    /* padding:1.5rem 0; */
     width:50%;
     height:100%;
     box-shadow: 5px 10px 5px rgb(57, 59, 63,0.8) ;
@@ -182,10 +186,12 @@ h2,.text {
     margin-top:2rem;
 }
 .contactHeader {
-    background-color: #3292FF;
-    padding:0;
-    margin-bottom:1.5rem;
+    /* background-color: #8e8e90; */
+    padding:1rem;
     border-radius: 0.5rem;
+}
+.contactHeader hr {
+    background-color: #1795FF;
 }
 .topContact h1 {
     text-align:center;
@@ -196,13 +202,10 @@ h2,.text {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:0.3rem;
-    padding:1.5rem;
+    padding:0 1.5rem;
     font-size:20px;
     background-color: #FFFFFF;
 }
-/* .formContact .formLabel,.email,.message, input {
-    font-family:helvetica,arial,sans-serif;
-} */
 .customerInfo {
     width:100%;
 }
@@ -213,17 +216,25 @@ input, textarea {
 input[type=text] textarea [type=text]:focus {
     border: 3px solid #1795FF;
 }
+input[type=text]{
+    font-family:monospace;
+    font-size:0.8rem;
+
+}
 .formLabel {
     display:block;
-    padding: 1.2rem 0;
+    padding: 0.5rem 0;
+    font-family:monospace;
 }
 .submit {
     border-radius:1rem;
     grid-column:1/3;
 }
-.formContainer textarea .message {
-    grid-column:1/3;
-    
+.message {
+    width:100%;
+    grid-column: 1/3;
+    margin-bottom:1.2rem;
+    height:100%;
 }
 
 
