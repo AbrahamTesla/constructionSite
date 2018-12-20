@@ -11,6 +11,8 @@ body, html{
     line-height: 1.8em;
     height:100%;
     background-color:#f4f4f4;
+    letter-spacing: 0.3px;
+    width:100%;
 }
 
 /***** Main Image Jumbotron *****/
@@ -159,10 +161,72 @@ h2,.text {
     text-align: center;
 }
  ion-icon {
-    color:blue;
+    color:#1795FF;
     font-size:2em;  
 }
 .copyRight{
     text-align:center;
 }
 
+/*****Contact Section CSS*****/
+.topContact {
+    /* border: 10px solid  #272A2F; */
+    border-radius: 0.5rem;
+    /* optional for styling */
+    border: 2px solid #d9dde2;
+    /* padding:1.5rem 0; */
+    width:50%;
+    margin-top:1rem;
+    height:100%;
+    box-shadow: 0 5px 5px rgb(57, 59, 63,0.8) ;
+    background-color: #FFFFFF;
+}
+.contactHeader {
+    background-color: #3292FF;
+    padding:0;
+    
+    border-radius: 0.5rem;
+}
+.topContact h1 {
+    text-align:center;
+    color:#A9A9A9;
+    letter-spacing: 0.5rem;
+}
+.formContact {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:0.3rem;
+    padding:1.5rem;
+    font-size:20px;
+    background-color: #FFFFFF;
+    /* min-width: 50%; */
+    margin:0;
+
+}
+/* .formContact .formLabel,.email,.message, input {
+    font-family:helvetica,arial,sans-serif;
+} */
+.customerInfo {
+    width:100%;
+}
+input, textarea {
+    width:100%;
+    padding:0.3rem;
+}
+input[type=text] textarea [type=text]:focus {
+    border: 3px solid #1795FF;
+}
+.formLabel {
+    display:block;
+}
+
+.submit {
+    border-radius:1rem;
+    grid-column:1/3;
+}
+.message {
+    grid-column: 1/3;
+}
+
+
+    
