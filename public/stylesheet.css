@@ -115,15 +115,24 @@ body, html{
     display:grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    margin-top:2rem;
+    background-color:#4E4E4E;
+    padding:1rem;
+    min-height:100%;
+    
 }
 .whatWeDo {
     text-align: center;
     padding:1rem;
-    background:#FFFFFF;
-    box-shadow: 0 1px 5px rgb(57, 59, 63,0.8) 
+    background:#f4f7f6;
+    /* background: url("image/torontoBeauty.jpeg"); */
+    box-shadow: 0 1px 5px rgb(57, 59, 63,0.8);
+    border-radius:1em;
+    
 }
 i{
     color:#a9b7d3;
+    /* color:#1795FF;; */
 }
 
 /* .img2 {
@@ -229,7 +238,7 @@ h2,.text {
     text-align: center;
 }
  ion-icon {
-    color:#1795FF;
+    color:c
     font-size:2em;  
 }
 .copyRight{
